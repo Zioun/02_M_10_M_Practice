@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    padding: 50px 0 70px 0;
+}
+.container{
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+.container, .inner{
+    width: 200px;
+    height: 200px;
+    border: 1px solid chocolate;
+}
+.inner{
+    background-color: beige;
+    border: 1px solid cadetblue;
+    /* transform: scale(0.75, 0.65); */
+    /* transform: rotate(40deg); */
+    /* transform: scale(.5) rotate(45deg) translateX(100px); */
+    transform: translateX(100px);
+}
