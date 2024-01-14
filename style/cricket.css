@@ -1,0 +1,60 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+    font-family: sans-serif;
+}
+.cricket_feld{
+    width: 100%;
+    height: 550px;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.cricket_feld > h3{
+    display: block;
+    position: absolute;
+    font-size: 500px;
+    padding-top: 50px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0px;
+    transition: 0.3s;
+    transition-delay: 1s;
+    z-index: 1;
+}
+.cricket_feld img:last-child{
+    width: 60px;
+    height: 60px;
+}
+.cricket_bat{
+    transform-origin: top right;
+    transition: 0.1s;
+}
+.cricket_ball{
+    position: relative;
+    left: 246px;
+    top: -40px;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+.cricket_feld:hover h3{
+    font-size: 400px;
+    background-color: #1A134C;
+}
+.cricket_feld:hover .cricket_bat{
+    transform: rotate(-73deg);
+}
+.cricket_feld:hover .cricket_ball{
+    transform: rotate(-73deg);
+    position: relative;
+    left: 1400px;
+    top: -600px;
+}

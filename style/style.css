@@ -9,19 +9,24 @@ h2{
     padding: 50px 0 70px 0;
 }
 .container{
-    background-color: antiquewhite;
     margin: 0 auto;
 }
-.container, .inner{
+.inner{
     width: 200px;
     height: 200px;
     border: 1px solid chocolate;
-}
-.inner{
     background-color: beige;
     border: 1px solid cadetblue;
     /* transform: scale(0.75, 0.65); */
     /* transform: rotate(40deg); */
     /* transform: scale(.5) rotate(45deg) translateX(100px); */
-    transform: translateX(100px);
+    /* transform: translateX(100px); */
+    /* property name | duration | easing function |delay */
+    /* transition: width 5s linear 3s, background-color 3s ease-in 2s; */
+    transition: transform 2s;
+}
+.inner:hover{
+    transform: rotate(45deg) translateX(150px);
+    /* background-color: red; */
+
 }
